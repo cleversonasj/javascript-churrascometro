@@ -19,10 +19,10 @@ function calcular() {
   } Kgs de Carne.</p></div>`;
   resultado.innerHTML += `<div><img class="iconImage" src="./images/beer.png" alt="Cerveja"><p class="pIcon">${
     qtdTotalCerveja / 355
-  } Latas de Cerveja (Latas de 355ml).</p></div>`;
+  } Latas de 355ml de Cerveja.</p></div>`;
   resultado.innerHTML += `<div><img class="iconImage" src="./images/soda.png" alt="Refrigerante"><p class="pIcon">${
     qtdTotalBebidas / 1000
-  } Litros de Refrigerantes, Sucos, etc.</p></div>`;
+  } Litros de Refrigerantes.</p></div>`;
 }
 
 function carnePP(duracao) {
