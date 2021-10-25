@@ -39,6 +39,7 @@ div{
   padding: 20px 40px 20px 40px;
 }
 
+
 input{
   width: 100%;
   display: block;
@@ -103,11 +104,12 @@ button:hover{
 
 .box2{
   width: 100vw;
-  height: 100vw;
+  height: auto;
   margin: auto;
   background-color: #f05742;
   padding: 20px 40px 20px 40px;
 }
+
 
 p{
   font-size: 0.9rem;
