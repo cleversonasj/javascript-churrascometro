@@ -15,14 +15,21 @@
   </head>
   <body>
     <div id="container" class="container">
-      <div id="box2" class="box2">
+      <div id="box" class="box">
         <img class="logo" src="./images/logo.png" alt="logo" />
-        <p class="pInput">Quantidade de Adultos:</p>
+        <p class="pInput">Quantidade de Adultos (Bebem Cerveja)</p>
         <input
           id="adultos"
           class="adultos"
           type="number"
-          placeholder="Adultos"
+          placeholder="Adultos Bebem Cerveja"
+        />
+        <p class="pInput">Quantidade de Adultos (Não Bebem Cerveja)</p>
+        <input
+          id="adultosNaoBebem"
+          class="adNaoBebem"
+          type="number"
+          placeholder="Adultos Não Bebem Cerveja"
         />
         <p class="pInput">Quantidade de Crianças:</p>
         <input
@@ -42,11 +49,9 @@
         <br />
         <br />
         <br />
-
         <div id="resultado" class="resultado"></div>
       </div>
     </div>
-
     <script src="javascript/script.js"></script>
   </body>
 </html>

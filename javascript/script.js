@@ -1,18 +1,21 @@
 let inputAdultos = document.getElementById("adultos");
+let inputAdultosNaoBebem = document.getElementById("adultosNaoBebem");
 let inputCriancas = document.getElementById("criancas");
 let inputDuracao = document.getElementById("duracao");
 let resultado = document.getElementById("resultado");
 
 function calcular() {
-  let adultos = inputAdultos.value;
-  let criancas = inputCriancas.value;
-  let duracao = inputDuracao.value;
+  let adultos = parseInt(inputAdultos.value);
+  let adultosNaoBebem = parseInt(inputAdultosNaoBebem.value);
+  let criancas = parseInt(inputCriancas.value);
+  let duracao = parseInt(inputDuracao.value);
 
   let qtdTotalCarne =
-    carnePP(duracao) * adultos + (carnePP(duracao) / 2) * criancas;
+    carnePP(duracao) * (adultos + adultosNaoBebem) +
+    (carnePP(duracao) / 2) * criancas;
   let qtdTotalCerveja = cervejaPP(duracao) * adultos;
   let qtdTotalBebidas =
-    bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2) * criancas;
+    bebidasPP(duracao) * adultosNaoBebem + (bebidasPP(duracao) / 2) * criancas;
   resultado.innerHTML = `<p class="pIcon">Você vai precisar de: </p>`;
   resultado.innerHTML += `<div><img class="iconImage" src="./images/meat.png" alt="Carne"><p class="pIcon">${
     qtdTotalCarne / 1000
